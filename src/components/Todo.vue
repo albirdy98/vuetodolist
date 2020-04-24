@@ -10,3 +10,18 @@
         <button class="nes-btn is-error padding" @click="removeTodo(todo.id)">X</button>
     </li>
 </template>
+
+<script>
+import { mapActions } from "vuex";
+
+export default {
+    name: "todo",
+    props: ["todo"],
+    methods: {
+        ...mapActions(["removeTodo", "toggle"])
+    }
+};
+</script>
+
+<style>
+</style>
