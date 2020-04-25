@@ -29,6 +29,7 @@ export default {
     }
   },
   methods: {
+    // eslint-disable-next-line no-unused-vars
     onSubmit(event) {
       if (!this.text) {
         alert("Enter some text to add");
